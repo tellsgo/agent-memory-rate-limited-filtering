@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+data/*.jsonl
+data/*.jsonl.gz
+data/*.json
+data/*.out
+paper/generated/
+figsrc/.cache/
+figsrc/.mplconfig/
+figsrc/fig*.pdf
+figsrc/fig*.png
+figsrc/fig*.json

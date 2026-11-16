@@ -1,0 +1,15 @@
+\begin{tabular}{@{}rrcccc@{}}
+\toprule
+ & & \multicolumn{2}{c}{Qwen2.5-14B} & \multicolumn{2}{c}{phi-4} \\
+\cmidrule(lr){3-4}\cmidrule(l){5-6}
+$K$ & $T$ & agreement with $\hat y$ & $\mathrm{BA}(1)$ & agreement with $\hat y$ & $\mathrm{BA}(1)$ \\
+\midrule
+3 & 64 & 0.952 & 0.962 & 0.971 & 0.950 \\
+3 & 256 & 0.934 & 0.925 & 0.973 & 0.938 \\
+7 & 64 & 0.936 & 0.925 & 0.978 & 0.975 \\
+7 & 256 & 0.932 & 0.900 & 0.953 & 0.887 \\
+15 & 64 & 0.956 & 0.963 & 0.960 & 0.900 \\
+15 & 256 & 0.863 & 0.925 & 0.966 & 0.912 \\
+15 & 1{,}024 & 0.902 & 0.963 & 0.974 & 0.912 \\
+\bottomrule
+\end{tabular}

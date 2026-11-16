@@ -1,0 +1,18 @@
+\begin{tabular}{@{}lrlrrrr@{}}
+\toprule
+reader & $T$ & policy & pairs & pred & obs & $|$gap$|$ \\
+\midrule
+qwen2.5-14b & 256 & random & 100 & 0.58 & 0.61 & 0.025 \\
+qwen2.5-14b & 256 & lru & 100 & 0.54 & 0.58 & 0.039 \\
+qwen2.5-14b & 1024 & random & 50 & 0.56 & 0.64 & 0.083 \\
+qwen2.5-14b & 1024 & lru & 50 & 0.53 & 0.57 & 0.041 \\
+phi-4 & 256 & random & 100 & 0.62 & 0.66 & 0.038 \\
+phi-4 & 256 & lru & 100 & 0.56 & 0.61 & 0.044 \\
+phi-4 & 1024 & random & 50 & 0.56 & 0.62 & 0.056 \\
+phi-4 & 1024 & lru & 50 & 0.53 & 0.61 & 0.078 \\
+gpt-oss-120b & 256 & random & 100 & 0.64 & 0.65 & 0.003 \\
+gpt-oss-120b & 256 & lru & 100 & 0.57 & 0.56 & 0.014 \\
+gpt-oss-120b & 1024 & random & 50 & 0.62 & 0.69 & 0.072 \\
+gpt-oss-120b & 1024 & lru & 50 & 0.56 & 0.55 & 0.010 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,19 @@
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+ & \multicolumn{2}{c}{first domain, 200 pairs} & \multicolumn{2}{c}{second domain, 100 pairs} \\
+\cmidrule(lr){2-3}\cmidrule(l){4-5}
+arm & Qwen2.5-14B & phi-4 & Qwen2.5-14B & phi-4 \\
+\midrule
+A. raw dependency lines & 0.87 & 0.88 & 0.72 & 0.68 \\
+B. answer-time state trace & 0.77 & 0.86 & 0.77 & 0.81 \\
+C. answer-time summary & 0.98 & 0.93 & 0.78 & 0.81 \\
+D. typed updates, not resolved & 0.74 & 0.68 & 0.73 & 0.69 \\
+E. resolved state rows & 0.94 & 0.90 & 0.92 & 0.98 \\
+\midrule
+E $-$ A (H1, registered) & $+0.07$ $[0.03,0.10]$ & $+0.02$ $[-0.02,0.07]$ & $+0.20$ $[0.15,0.26]$ & $+0.30$ $[0.23,0.36]$ \\
+E $-$ B (H2, registered) & $+0.17$ $[0.13,0.22]$ & $+0.04$ $[0.00,0.09]$ & $+0.15$ $[0.11,0.20]$ & $+0.17$ $[0.12,0.23]$ \\
+E $-$ D, applying the rule & $+0.20$ $[0.15,0.25]$ & $+0.23$ $[0.18,0.27]$ & $+0.20$ $[0.15,0.25]$ & $+0.29$ $[0.24,0.35]$ \\
+D $-$ A, typing alone & $-0.13$ $[-0.17,-0.09]$ & $-0.20$ $[-0.24,-0.16]$ & $+0.01$ $[-0.05,0.06]$ & $+0.01$ $[-0.05,0.06]$ \\
+B $-$ C, structure of the trace & $-0.21$ $[-0.25,-0.18]$ & $-0.07$ $[-0.11,-0.04]$ & $-0.01$ $[-0.06,0.04]$ & $+0.00$ $[-0.04,0.04]$ \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,12 @@
+\begin{tabular}{l l cccccc cc c}
+\toprule
+ & & \multicolumn{6}{c}{balanced accuracy} & \multicolumn{2}{c}{registered} & \\
+\cmidrule(lr){3-8}\cmidrule(lr){9-10}
+writer & endpoint & RULE & INJ$_K$ & FREE$_K$ & INJ$_{KT}$ & INJ$_F$ & FREE$_F$ & RULE$-$FREE$_F$ & FREE$_F-$FREE$_K$ & case \\
+\midrule
+Qwen2.5-14B & writer reads & 0.96 & 0.66 & 0.67 & 0.70 & 0.70 & 0.70 & $+0.27$ $[0.22,0.32]$ & $+0.03$ $[-0.03,0.08]$ & A \\
+ & state answer & 1.00 & 0.66 & 0.68 & 0.70 & 0.73 & 0.71 & $+0.29$ $[0.24,0.34]$ & $+0.04$ $[-0.03,0.10]$ &  \\
+phi-4 & writer reads & 0.99 & 0.96 & 0.93 & 0.97 & 0.97 & 0.96 & $+0.04$ $[0.01,0.06]$ & $+0.03$ $[-0.01,0.06]$ & E \\
+ & state answer & 1.00 & 0.95 & 0.94 & 0.97 & 0.98 & 0.98 & $+0.03$ $[0.01,0.05]$ & $+0.04$ $[0.01,0.08]$ &  \\
+\bottomrule
+\end{tabular}

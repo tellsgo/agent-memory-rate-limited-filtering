@@ -1,0 +1,31 @@
+rule,m,error
+BM25,5,0.500
+BM25,9,0.500
+BM25,17,0.500
+BM25,33,0.500
+BM25,65,0.500
+key mention,5,0.383
+key mention,9,0.442
+key mention,17,0.483
+key mention,33,0.492
+key mention,65,0.483
+salience,5,0.500
+salience,9,0.500
+salience,17,0.500
+salience,33,0.500
+salience,65,0.500
+recency,5,0.475
+recency,9,0.433
+recency,17,0.433
+recency,33,0.325
+recency,65,0.142
+key recency,5,0.000
+key recency,9,0.000
+key recency,17,0.000
+key recency,33,0.000
+key recency,65,0.000
+last applied,5,0.000
+last applied,9,0.000
+last applied,17,0.000
+last applied,33,0.000
+last applied,65,0.000

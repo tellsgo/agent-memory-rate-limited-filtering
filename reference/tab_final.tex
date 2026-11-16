@@ -1,0 +1,16 @@
+\begin{tabular}{@{}llrrllrrrrrr@{}}
+\toprule
+ & & \multicolumn{4}{c}{first domain, 256 events} & \multicolumn{2}{c}{second domain} & \multicolumn{4}{c}{resources per stream} \\
+\cmidrule(lr){3-6}\cmidrule(lr){7-8}\cmidrule(l){9-12}
+memory & row & Qwen & phi-4 & Qwen $-$ retr. & phi-4 $-$ retr. & Qwen & phi-4 & store kB & calls & write tokens & read tokens \\
+\midrule
+full log & R5-4 & n.r. & n.r. &  &  & 0.56 & 0.56 & 23.2 & 0 & 0 & 6{,}808 \\
+dependency retriever & R5-3 & 0.78 & 0.89 &  &  & 0.72 & 0.71 & 23.2 & 0 & 0 & 75 \\
+parsed filter, whole state & X6 & 0.80 & 0.84 & $+0.03$ $[-0.09,0.14]$ & $-0.05$ $[-0.15,0.05]$ & 0.78 & 0.91 & 2.1 & 256 & 116{,}736 (11{,}776) & 501 \\
+parsed filter, query rows & R6-2 & 0.91 & 0.89 & $+0.14$ $[0.04,0.24]$ & $+0.00$ $[-0.09,0.09]$ & 0.95 & 0.98 & 2.1 & 256 & 116{,}736 (11{,}776) & 23 \\
+StateMem-style, native & R5-3 & 0.55 & 0.54 & $-0.23$ $[-0.31,-0.14]$ & $-0.35$ $[-0.43,-0.26]$ & n.r. & n.r. & 28.7 & 321 & 1{,}422{,}815 & 9{,}348 \\
+StateMem-style, policy & R5-3 & 0.63 & 0.64 & $-0.15$ $[-0.28,-0.01]$ & $-0.25$ $[-0.33,-0.16]$ & n.r. & n.r. & 10.1 & 257 & 457{,}579 & 3{,}156 \\
+Mem0, top-10 search & R5-3 & 0.46 & 0.55 & $-0.31$ $[-0.40,-0.23]$ & $-0.34$ $[-0.43,-0.25]$ & n.r. & n.r. & 633.8 & 256 & 183{,}713 & 346 \\
+Mem0, dependency selection & R6-1 & 0.84 & 0.78 & $+0.06$ $[-0.01,0.14]$ & $-0.11$ $[-0.19,-0.04]$ & n.r. & n.r. & 633.8 & 256 & 183{,}713 & 152 \\
+\bottomrule
+\end{tabular}
